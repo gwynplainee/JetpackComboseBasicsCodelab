@@ -22,7 +22,7 @@ jobs:
 
       # Check if README.md contains the word "project" - Eldiyar
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Check README
         run: grep "project" README.md
