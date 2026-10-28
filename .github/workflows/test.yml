@@ -11,3 +11,10 @@ jobs:
     steps:
       - name: Run test
         run: echo "Test passed"
+
+      # Check if README.md contains the word "project" - Eldiyar
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check README
+        run: grep "project" README.md
