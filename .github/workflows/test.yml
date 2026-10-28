@@ -1,3 +1,4 @@
+
 name: CI Test
 
 on:
@@ -9,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Build
+        run: echo "Application is built"
+
       - name: Run test
         run: echo "Test passed"
 
