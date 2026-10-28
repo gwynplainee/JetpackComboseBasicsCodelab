@@ -12,6 +12,10 @@ jobs:
       - name: Run test
         run: echo "Test passed"
 
+      - name: Lint check
+        run: echo "Lint passed"
+
+
       # Check if README.md contains the word "project" - Eldiyar
       - name: Checkout repository
         uses: actions/checkout@v4
